@@ -1,0 +1,76 @@
+/* ================================================== */
+/* HEADER */
+/* ================================================== */
+
+.header {
+    background-color: var(--color-surface-main);
+    backdrop-filter: blur(4px);
+    position: sticky;
+    top: -91px;
+}
+
+.header .section:first-child { border-bottom: 1px solid var(--color-border-dark); }
+
+.header #startBtn {
+    border: 1px solid var(--color-border-light);
+    backdrop-filter: blur(4px);
+    box-shadow: 2px 2px 8px 1px var(--color-surface-alt) inset;
+    transition: box-shadow 0.5s;
+}
+
+.header #startBtn:hover {
+    box-shadow: 0 0 12px 4px var(--color-surface-alt) inset;
+}
+
+/* ================================================== */
+/* HERO */
+/* ================================================== */
+
+.hero {
+    margin-top: -151px;
+    background-image: url('/assets/bg-desktop.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ================================================== */
+/* DISCOVER */
+/* ================================================== */
+
+.discover {
+    background: radial-gradient(#3A405A, transparent 40%) no-repeat -175vw -125vh / 260vw 250vh;
+}
+
+.discover .section { min-height: 60vh; }
+
+.discover .h1.fs-128 {
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+}
+
+/* ================================================== */
+/* CORE */
+/* ================================================== */
+
+.core {
+    min-height: 100vh;
+    background-image: url('/assets/core-desktop.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.core .section { min-height: 100vh; }
+
+.core .search-bar {
+    max-width: 568px;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    box-shadow: 2px 2px 8px 1px var(--color-border-light) inset;
+}
+
+.core .benefits { grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); }
+
+.core .benefits .benefit {
+    backdrop-filter: blur(4px);
+    box-shadow: 2px 2px 8px 1px var(--color-border-light) inset;
+}
