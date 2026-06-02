@@ -4,6 +4,7 @@
 
 const loader = document.querySelector(".loader");
 const sections = document.querySelectorAll(".section");
+const faqHeaders = document.querySelectorAll('.faq-header');
 
 // ==================================================
 // OBSERVER STATE
@@ -34,21 +35,56 @@ function startQueryAnimation() {
     const queryObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
+                if (typed) { return; }
+
                 typed = new Typed('#searchQuery', {
-                    strings: ['Avenue Fitness', 'Avenue Gym', 'BMW', 'coderadi'],
+                    strings: [
+                        "Avenue Fitness",
+                        "Avenue Gym",
+                        "Avenue Fitness Reviews",
+                        "Avenue Fitness Pricing",
+                        "Avenue Fitness Transformations",
+                        "Avenue Fitness Contact"
+                    ],
                     typeSpeed: 50,
                     loop: true,
                     smartBackspace: true,
                     backSpeed: 20,
                 });
             }
-            else { typed.destroy(); }
+            else if (typed) {
+                typed.destroy();
+                typed = undefined;
+            }
         });
     }, {
         threshold: 0.3,
     });
 
-    queryObserver.observe(document.querySelector("#searchQuery"));
+    const queryTarget = document.querySelector("#searchQuery");
+    if (queryTarget) {
+        queryObserver.observe(queryTarget);
+    }
+}
+
+// * FUNCTION TO SETUP BOOK-BTN ANIMATION
+function startBookBtnAnimation() {
+    const bookBtn = document.querySelector('#bookBtn');
+    if (!bookBtn) { return; }
+
+    const bookObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('glass');
+            } else {
+                entry.target.classList.remove('glass');
+            }
+        });
+    }, {
+        threshold: 0.4,
+    });
+
+    bookObserver.observe(bookBtn);
 }
 
 // * FUNCTION TO START SECTION OBSERVER
@@ -74,6 +110,14 @@ function hideLoader() {
 
 // & EVENT LISTENER TO HIDE LOADER ON LOAD
 document.addEventListener("DOMContentLoaded", () => {
-    // startSectionObserver();
+    hideLoader();
     startQueryAnimation();
+    startBookBtnAnimation();
+});
+
+// & EVENT LISTENERS FOR FAQ-HEADER CLICK
+faqHeaders.forEach(faqHeader => {
+    faqHeader.addEventListener('click', () => {
+        faqHeader.closest('.faq-item').classList.toggle('active');
+    });
 });

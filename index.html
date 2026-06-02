@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,16 @@
     <link rel="stylesheet" href="_utility.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="loader p-20 bg-main center">
+        <svg width="541" height="100" viewBox="0 0 541 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M34.3636 99.7727C27.2121 99.7727 21.0606 98.2576 15.9091 95.2273C10.7879 92.1667 6.84849 87.9242 4.09091 82.5C1.36364 77.0758 2.86102e-06 70.8333 2.86102e-06 63.7727C2.86102e-06 56.6212 1.37879 50.3485 4.13637 44.9545C6.92425 39.5303 10.8788 35.303 16 32.2727C21.1212 29.2121 27.2121 27.6818 34.2727 27.6818C40.3636 27.6818 45.697 28.7879 50.2727 31C54.8485 33.2121 58.4697 36.3182 61.1364 40.3182C63.803 44.3182 65.2727 49.0152 65.5455 54.4091H47.2727C46.7576 50.9242 45.3939 48.1212 43.1818 46C41 43.8485 38.1364 42.7727 34.5909 42.7727C31.5909 42.7727 28.9697 43.5909 26.7273 45.2273C24.5152 46.8333 22.7879 49.1818 21.5455 52.2727C20.303 55.3636 19.6818 59.1061 19.6818 63.5C19.6818 67.9545 20.2879 71.7424 21.5 74.8636C22.7424 77.9849 24.4849 80.3636 26.7273 82C28.9697 83.6364 31.5909 84.4545 34.5909 84.4545C36.803 84.4545 38.7879 84 40.5455 83.0909C42.3333 82.1818 43.803 80.8636 44.9545 79.1364C46.1364 77.3788 46.9091 75.2727 47.2727 72.8182H65.5455C65.2424 78.1515 63.7879 82.8485 61.1818 86.9091C58.6061 90.9394 55.0455 94.0909 50.5 96.3636C45.9546 98.6364 40.5758 99.7727 34.3636 99.7727ZM109.489 99.7727C102.428 99.7727 96.322 98.2727 91.1705 95.2727C86.0492 92.2424 82.0947 88.0303 79.3068 82.6364C76.5189 77.2121 75.125 70.9242 75.125 63.7727C75.125 56.5606 76.5189 50.2576 79.3068 44.8636C82.0947 39.4394 86.0492 35.2273 91.1705 32.2273C96.322 29.197 102.428 27.6818 109.489 27.6818C116.549 27.6818 122.64 29.197 127.761 32.2273C132.913 35.2273 136.883 39.4394 139.67 44.8636C142.458 50.2576 143.852 56.5606 143.852 63.7727C143.852 70.9242 142.458 77.2121 139.67 82.6364C136.883 88.0303 132.913 92.2424 127.761 95.2727C122.64 98.2727 116.549 99.7727 109.489 99.7727ZM109.58 84.7727C112.792 84.7727 115.473 83.8636 117.625 82.0455C119.777 80.197 121.398 77.6818 122.489 74.5C123.61 71.3182 124.17 67.697 124.17 63.6364C124.17 59.5758 123.61 55.9546 122.489 52.7727C121.398 49.5909 119.777 47.0758 117.625 45.2273C115.473 43.3788 112.792 42.4545 109.58 42.4545C106.337 42.4545 103.61 43.3788 101.398 45.2273C99.2159 47.0758 97.5644 49.5909 96.4432 52.7727C95.3523 55.9546 94.8068 59.5758 94.8068 63.6364C94.8068 67.697 95.3523 71.3182 96.4432 74.5C97.5644 77.6818 99.2159 80.197 101.398 82.0455C103.61 83.8636 106.337 84.7727 109.58 84.7727ZM182.17 99.5455C176.867 99.5455 172.064 98.1818 167.761 95.4546C163.489 92.697 160.095 88.6515 157.58 83.3182C155.095 77.9545 153.852 71.3788 153.852 63.5909C153.852 55.5909 155.14 48.9394 157.716 43.6364C160.292 38.303 163.716 34.3182 167.989 31.6818C172.292 29.0152 177.004 27.6818 182.125 27.6818C186.034 27.6818 189.292 28.3485 191.898 29.6818C194.534 30.9849 196.655 32.6212 198.261 34.5909C199.898 36.5303 201.14 38.4394 201.989 40.3182H202.58V5.31818H221.898V98.4091H202.807V87.2273H201.989C201.08 89.1667 199.792 91.0909 198.125 93C196.489 94.8788 194.352 96.4394 191.716 97.6818C189.11 98.9242 185.928 99.5455 182.17 99.5455ZM188.307 84.1364C191.428 84.1364 194.064 83.2879 196.216 81.5909C198.398 79.8636 200.064 77.4545 201.216 74.3636C202.398 71.2727 202.989 67.6515 202.989 63.5C202.989 59.3485 202.413 55.7424 201.261 52.6818C200.11 49.6212 198.443 47.2576 196.261 45.5909C194.08 43.9242 191.428 43.0909 188.307 43.0909C185.125 43.0909 182.443 43.9545 180.261 45.6818C178.08 47.4091 176.428 49.803 175.307 52.8636C174.186 55.9242 173.625 59.4697 173.625 63.5C173.625 67.5606 174.186 71.1515 175.307 74.2727C176.458 77.3636 178.11 79.7879 180.261 81.5455C182.443 83.2727 185.125 84.1364 188.307 84.1364ZM269.636 99.7727C262.455 99.7727 256.273 98.3182 251.091 95.4091C245.939 92.4697 241.97 88.3182 239.182 82.9545C236.394 77.5606 235 71.1818 235 63.8182C235 56.6364 236.394 50.3333 239.182 44.9091C241.97 39.4849 245.894 35.2576 250.955 32.2273C256.045 29.197 262.015 27.6818 268.864 27.6818C273.47 27.6818 277.758 28.4242 281.727 29.9091C285.727 31.3636 289.212 33.5606 292.182 36.5C295.182 39.4394 297.515 43.1364 299.182 47.5909C300.848 52.0152 301.682 57.197 301.682 63.1364V68.4545H242.727V56.4545H283.455C283.455 53.6667 282.848 51.197 281.636 49.0455C280.424 46.8939 278.742 45.2121 276.591 44C274.47 42.7576 272 42.1364 269.182 42.1364C266.242 42.1364 263.636 42.8182 261.364 44.1818C259.121 45.5152 257.364 47.3182 256.091 49.5909C254.818 51.8333 254.167 54.3333 254.136 57.0909V68.5C254.136 71.9545 254.773 74.9394 256.045 77.4545C257.348 79.9697 259.182 81.9091 261.545 83.2727C263.909 84.6364 266.712 85.3182 269.955 85.3182C272.106 85.3182 274.076 85.0152 275.864 84.4091C277.652 83.803 279.182 82.8939 280.455 81.6818C281.727 80.4697 282.697 78.9849 283.364 77.2273L301.273 78.4091C300.364 82.7121 298.5 86.4697 295.682 89.6818C292.894 92.8636 289.288 95.3485 284.864 97.1364C280.47 98.8939 275.394 99.7727 269.636 99.7727ZM314.318 98.4091V28.5909H333.091V40.7727H333.818C335.091 36.4394 337.227 33.1667 340.227 30.9546C343.227 28.7121 346.682 27.5909 350.591 27.5909C351.561 27.5909 352.606 27.6515 353.727 27.7727C354.848 27.8939 355.833 28.0606 356.682 28.2727V45.4545C355.773 45.1818 354.515 44.9394 352.909 44.7273C351.303 44.5152 349.833 44.4091 348.5 44.4091C345.652 44.4091 343.106 45.0303 340.864 46.2727C338.652 47.4849 336.894 49.1818 335.591 51.3636C334.318 53.5455 333.682 56.0606 333.682 58.9091V98.4091H314.318ZM384.602 99.7273C380.148 99.7273 376.178 98.9546 372.693 97.4091C369.208 95.8333 366.451 93.5152 364.42 90.4546C362.42 87.3636 361.42 83.5152 361.42 78.9091C361.42 75.0303 362.133 71.7727 363.557 69.1364C364.981 66.5 366.92 64.3788 369.375 62.7727C371.83 61.1667 374.617 59.9545 377.739 59.1364C380.89 58.3182 384.193 57.7424 387.648 57.4091C391.708 56.9849 394.981 56.5909 397.466 56.2273C399.951 55.8333 401.754 55.2576 402.875 54.5C403.996 53.7424 404.557 52.6212 404.557 51.1364V50.8636C404.557 47.9849 403.648 45.7576 401.83 44.1818C400.042 42.6061 397.496 41.8182 394.193 41.8182C390.708 41.8182 387.936 42.5909 385.875 44.1364C383.814 45.6515 382.451 47.5606 381.784 49.8636L363.875 48.4091C364.784 44.1667 366.572 40.5 369.239 37.4091C371.905 34.2879 375.345 31.8939 379.557 30.2273C383.799 28.5303 388.708 27.6818 394.284 27.6818C398.163 27.6818 401.875 28.1364 405.42 29.0455C408.996 29.9545 412.163 31.3636 414.92 33.2727C417.708 35.1818 419.905 37.6364 421.511 40.6364C423.117 43.6061 423.92 47.1667 423.92 51.3182V98.4091H405.557V88.7273H405.011C403.89 90.9091 402.39 92.8333 400.511 94.5C398.633 96.1364 396.375 97.4242 393.739 98.3636C391.102 99.2727 388.057 99.7273 384.602 99.7273ZM390.148 86.3636C392.996 86.3636 395.511 85.803 397.693 84.6818C399.875 83.5303 401.587 81.9849 402.83 80.0455C404.072 78.1061 404.693 75.9091 404.693 73.4545V66.0455C404.087 66.4394 403.254 66.803 402.193 67.1364C401.163 67.4394 399.996 67.7273 398.693 68C397.39 68.2424 396.087 68.4697 394.784 68.6818C393.481 68.8636 392.299 69.0303 391.239 69.1818C388.966 69.5152 386.981 70.0455 385.284 70.7727C383.587 71.5 382.269 72.4849 381.33 73.7273C380.39 74.9394 379.92 76.4545 379.92 78.2727C379.92 80.9091 380.875 82.9242 382.784 84.3182C384.723 85.6818 387.178 86.3636 390.148 86.3636ZM464.67 99.5455C459.367 99.5455 454.564 98.1818 450.261 95.4546C445.989 92.697 442.595 88.6515 440.08 83.3182C437.595 77.9545 436.352 71.3788 436.352 63.5909C436.352 55.5909 437.64 48.9394 440.216 43.6364C442.792 38.303 446.216 34.3182 450.489 31.6818C454.792 29.0152 459.504 27.6818 464.625 27.6818C468.534 27.6818 471.792 28.3485 474.398 29.6818C477.034 30.9849 479.155 32.6212 480.761 34.5909C482.398 36.5303 483.64 38.4394 484.489 40.3182H485.08V5.31818H504.398V98.4091H485.307V87.2273H484.489C483.58 89.1667 482.292 91.0909 480.625 93C478.989 94.8788 476.852 96.4394 474.216 97.6818C471.61 98.9242 468.428 99.5455 464.67 99.5455ZM470.807 84.1364C473.928 84.1364 476.564 83.2879 478.716 81.5909C480.898 79.8636 482.564 77.4545 483.716 74.3636C484.898 71.2727 485.489 67.6515 485.489 63.5C485.489 59.3485 484.913 55.7424 483.761 52.6818C482.61 49.6212 480.943 47.2576 478.761 45.5909C476.58 43.9242 473.928 43.0909 470.807 43.0909C467.625 43.0909 464.943 43.9545 462.761 45.6818C460.58 47.4091 458.928 49.803 457.807 52.8636C456.686 55.9242 456.125 59.4697 456.125 63.5C456.125 67.5606 456.686 71.1515 457.807 74.2727C458.958 77.3636 460.61 79.7879 462.761 81.5455C464.943 83.2727 467.625 84.1364 470.807 84.1364ZM520.318 98.4091V28.5909H539.682V98.4091H520.318ZM530.045 19.5909C527.167 19.5909 524.697 18.6364 522.636 16.7273C520.606 14.7879 519.591 12.4697 519.591 9.77273C519.591 7.10606 520.606 4.81818 522.636 2.9091C524.697 0.969699 527.167 0 530.045 0C532.924 0 535.379 0.969699 537.409 2.9091C539.47 4.81818 540.5 7.10606 540.5 9.77273C540.5 12.4697 539.47 14.7879 537.409 16.7273C535.379 18.6364 532.924 19.5909 530.045 19.5909Z"
+                fill="white" />
+        </svg>
+    </div>
+
     <header class="header w-full">
         <section class="section p-20 grid cols-3 v-center">
             <span class="text fs-20">Convo</span>
@@ -55,7 +65,7 @@
                 <div class="body column gap-12 text-center">
                     <p class="para">A minimal webpage system that does the selling for you.</p>
                     <p class="para">Your practice, coach-build for conversion</p>
-                    <pre class="para">Delivery time: 48 hours;  Niche: Online fitness coaches;</pre>
+                    <p class="para">Delivery time: 48 hours; Niche: Online fitness coaches;</p>
                 </div>
             </section>
         </section>
@@ -75,16 +85,17 @@
                 <div class="benefits grid gap-24">
                     <div class="benefit p-20 rounded-16 column gap-12">
                         <div class="head row gap-12">
-                            <span class="symbol"  style="color: #007CBE;">automation</span>
+                            <span class="symbol" style="color: #007CBE;">automation</span>
                             <span class="text fs-20">Autopilot</span>
                         </div>
 
-                        <span class="text">The webpage does the selling for you. You don't need to spend hours chatting.</span>
+                        <span class="text">The webpage does the selling for you. You don't need to spend hours
+                            chatting.</span>
                     </div>
 
                     <div class="benefit p-20 rounded-16 column gap-12">
                         <div class="head row gap-12">
-                            <span class="symbol"  style="color: #FBAF00;">bolt_boost</span>
+                            <span class="symbol" style="color: #FBAF00;">bolt_boost</span>
                             <span class="text fs-20">Energy</span>
                         </div>
 
@@ -93,7 +104,7 @@
 
                     <div class="benefit p-20 rounded-16 column gap-12">
                         <div class="head row gap-12">
-                            <span class="symbol"  style="color: #00AF54;">verified</span>
+                            <span class="symbol" style="color: #00AF54;">verified</span>
                             <span class="text fs-20">Professional feel</span>
                         </div>
 
@@ -102,12 +113,232 @@
 
                     <div class="benefit p-20 rounded-16 column gap-12">
                         <div class="head row gap-12">
-                            <span class="symbol"  style="color: #D64933;">trending_up</span>
+                            <span class="symbol" style="color: #D64933;">trending_up</span>
                             <span class="text fs-20">Numbers</span>
                         </div>
 
-                        <span class="text">Creating better content, and letting clients get every info in an organized manner, leads to increased onboarding.</span>
+                        <span class="text">Creating better content, and letting clients get every info in an organized
+                            manner, leads to increased onboarding.</span>
                     </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <section class="section p-48 column gap-64 center pt-60">
+                <div class="head column center gap-4 text-center">
+                    <h1 class="h1">Pricing</h1>
+                    <p class="para">Simple architecture with monthly and yearly setup.</p>
+                </div>
+
+                <div class="body grid cols-auto-400 gap-24">
+                    <div class="pricing-card column p-20 gap-24 rounded-16" id="monthlyPricing">
+                        <h2 class="h2">Monthly</h2>
+
+                        <p class="para">You invest for the setup in first month, then it costs for maintenance according
+                            to the page's requirement. Usually it costs;</p>
+
+                        <ul class="list column gap-12">
+                            <li class="row gap-12">
+                                <span class="text tag pv-8 ph-12 rounded-full">₹9,999.00</span>
+                                <span class="text">For the first month.</span>
+                            </li>
+
+                            <li class="row gap-12">
+                                <span class="text tag pv-8 ph-12 rounded-full">₹999.00</span>
+                                <span class="text">From next month.</span>
+                            </li>
+
+                            <li class="row gap-12">
+                                <span class="text tag pv-8 ph-12 rounded-full">.in</span>
+                                <span class="text">Domain name is free in this setup.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card column p-20 gap-24 rounded-16" id="yearlyPricing">
+                        <h2 class="h2">Yearly</h2>
+
+                        <p class="para">Yearly architecture is quite simple, you just have to invest a specific sum
+                            every year. That's it, usually it costs;</p>
+
+                        <ul class="list column gap-12">
+                            <li class="row gap-12">
+                                <span class="text tag pv-8 ph-12 rounded-full">₹15,999.00</span>
+                                <span class="text">For the whole year.</span>
+                            </li>
+
+                            <li class="row gap-12">
+                                <span class="text tag pv-8 ph-12 rounded-full">.in</span>
+                                <span class="text">Domain name is free in this setup.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="guarantee" id="guarantee">
+            <section class="section p-48 column center gap-48 pt-60">
+                <div class="head column gap-4 center text-center">
+                    <h1 class="h1">This setup saves you a lot of things</h1>
+                    <p class="para">But what if it doesn't work for you?</p>
+                </div>
+
+                <div class="body p-20 rounded-16 bg-card">
+                    <p class="para text-muted">If this setup does get you 5 <span class="text-normal">qualified
+                            leads</span> within <span class="text-normal">30 days of setup</span>, with your <span
+                            class="text-normal">usual Instagram traffic</span>, we'll provide you <span
+                            class="text-normal">1 month of free maintenance</span> on monthly tier and <span
+                            class="text-normal">₹1,299 off</span> on next renewal on annual tier.</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="faqs" id="faqs">
+            <section class="section p-48 column center gap-48 pt-60">
+                <div class="head column gap-4 text-center center">
+                    <h1 class="h1">Frequently Asked Questions</h1>
+                    <p class="para">Find Answers to Common Questions</p>
+                </div>
+
+                <div class="body column gap-16">
+                    <div class="faq-item w-full">
+                        <button class="faq-header btn link row gap-12 h-sb p-16">
+                            <span class="text text-left">Why do I need a website if I already get clients from
+                                Instagram?</span>
+                            <span class="faq-icon symbol">keyboard_arrow_right</span>
+                        </button>
+
+                        <div class="faq-content bg-card">
+                            <p class="para">Your website acts as a central hub for your business. It helps build trust,
+                                showcase your results, explain your coaching offer, and convert profile visitors into
+                                qualified leads.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item w-full">
+                        <button class="faq-header btn link row gap-12 h-sb p-16">
+                            <span class="text text-left">How long does it take to build my website?</span>
+                            <span class="faq-icon symbol">keyboard_arrow_right</span>
+                        </button>
+
+                        <div class="faq-content bg-card">
+                            <p class="para">Most projects are completed within 3-7 business days after all required
+                                content and information are provided.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item w-full">
+                        <button class="faq-header btn link row gap-12 h-sb p-16">
+                            <span class="text text-left">Can I update the content later?</span>
+                            <span class="faq-icon symbol">keyboard_arrow_right</span>
+                        </button>
+
+                        <div class="faq-content bg-card">
+                            <p class="para">Absolutely. You can update your programs, pricing, testimonials, and other
+                                content whenever needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item w-full">
+                        <button class="faq-header btn link row gap-12 h-sb p-16">
+                            <span class="text text-left">Will this website help me get more clients?</span>
+                            <span class="faq-icon symbol">keyboard_arrow_right</span>
+                        </button>
+
+                        <div class="faq-content bg-card">
+                            <p class="para">The website is designed to improve conversions by presenting your offer
+                                clearly and making it easy for prospects to take action. Results depend on your traffic,
+                                offer, and marketing efforts.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item w-full">
+                        <button class="faq-header btn link row gap-12 h-sb p-16">
+                            <span class="text text-left">What if I don't have professional photos or testimonials
+                                yet?</span>
+                            <span class="faq-icon symbol">keyboard_arrow_right</span>
+                        </button>
+
+                        <div class="faq-content bg-card">
+                            <p class="para">No problem. We can launch your website using your existing content and add
+                                testimonials, transformations, and branding assets as your business grows.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item w-full">
+                        <button class="faq-header btn link row gap-12 h-sb p-16">
+                            <span class="text text-left">Does the website include a lead capture or booking
+                                system?</span>
+                            <span class="faq-icon symbol">keyboard_arrow_right</span>
+                        </button>
+
+                        <div class="faq-content bg-card">
+                            <p class="para">Yes. Your website can include contact forms, application forms, and call
+                                booking integrations to help you collect leads and schedule consultations efficiently.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-header btn link row gap-12 h-sb p-16">
+                            <span class="text text-left">I'm just starting out. Is a website still worth it?</span>
+                            <span class="faq-icon symbol">keyboard_arrow_right</span>
+                        </button>
+
+                        <div class="faq-content bg-card">
+                            <p class="para">Absolutely. A professional website helps you establish credibility from day
+                                one, collect leads, and present your coaching offer in a way that builds trust with
+                                potential clients.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-header btn link row gap-12 h-sb p-16">
+                            <span class="text text-left">What makes this different from a generic website
+                                builder?</span>
+                            <span class="faq-icon symbol">keyboard_arrow_right</span>
+                        </button>
+
+                        <div class="faq-content bg-card">
+                            <p class="para">This isn't just a website. It's built specifically to help fitness coaches
+                                attract leads, build authority, and convert visitors into booked calls and clients
+                                through strategic design and messaging.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-header btn link row gap-12 h-sb p-16">
+                            <span class="text text-left">What happens after the website goes live?</span>
+                            <span class="faq-icon symbol">keyboard_arrow_right</span>
+                        </button>
+
+                        <div class="faq-content bg-card">
+                            <p class="para">Once your website is live, you can start sending traffic from Instagram,
+                                ads, or other channels. You'll also have the flexibility to update content and continue
+                                improving your online presence as your business grows.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="start" id="start">
+            <section class="section p-48 pt-60 column center gap-64">
+                <div class="head column center gap-4 text-center">
+                    <h1 class="h1">Launch your page</h1>
+                    <p class="para">Turn your profile into a client acquisition system.</p>
+                </div>
+
+                <div class="body">
+                    <a href="https://wa.me/918933920274?text=Hi, I wanna book a call regarding to a webpage system for my coaching."
+                        class="link p-16 rounded-16 column gap-16" id="bookBtn">
+                        <h2 class="h2">Book a call</h2>
+
+                        <p class="para">Book a call with our support agent and get a personalized setup done for you.
+                        </p>
+                    </a>
                 </div>
             </section>
         </section>
@@ -116,4 +347,5 @@
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

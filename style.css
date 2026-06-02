@@ -1,4 +1,25 @@
 /* ================================================== */
+/* LOADER */
+/* ================================================== */
+
+.loader {
+    position: fixed;
+    inset: 0;
+    transition:
+        opacity 0.5s ease-in-out,
+        visibility 0.5s ease-in-out;
+}
+
+.loader svg path {
+    fill: transparent;
+    stroke: var(--color-text-main);
+    stroke-width: 2px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: loaderAnimation 4s ease-in-out;
+}
+
+/* ================================================== */
 /* HEADER */
 /* ================================================== */
 
@@ -28,9 +49,10 @@
 
 .hero {
     margin-top: -151px;
-    background-image: url('/assets/bg-desktop.webp');
+    background-image: url('/assets/hero-desktop.webp');
     background-size: cover;
     background-position: center;
+    transition: height 0.3s;
 }
 
 /* ================================================== */
@@ -73,4 +95,115 @@
 .core .benefits .benefit {
     backdrop-filter: blur(4px);
     box-shadow: 2px 2px 8px 1px var(--color-border-light) inset;
+}
+
+/* ================================================== */
+/* PRICING */
+/* ================================================== */
+
+.pricing {
+    min-height: 100vh;
+    background-image: url('/assets/pricing-desktop.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.pricing .section { min-height: 100vh; }
+
+.pricing .body .pricing-card {
+    backdrop-filter: blur(4px);
+    box-shadow: 2px 2px 8px 1px var(--color-border-light) inset;
+    /* max-width: 400px; */
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #35605A1A;
+}
+
+.pricing .body .pricing-card .tag { background-color: #35605A4D; }
+
+/* ================================================== */
+/* GUARANTEE */
+/* ================================================== */
+
+.guarantee .body { max-width: 568px; }
+
+/* ================================================== */
+/* FAQS */
+/* ================================================== */
+
+.faqs .body .faq-item > * {
+    max-width: 568px;
+    width: 100%;
+}
+
+.faqs .body .faq-item .faq-header {
+    border-radius: 16px;
+    background-color: var(--color-bg-card);
+    transition: border-radius 0.5s ease 0.3s;
+}
+
+.faqs .body .faq-item.active .faq-header { border-radius: 16px 16px 0 0; }
+
+.faqs .body .faq-item .faq-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--border-color-dark);
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    transition: 
+        max-height 0.5s ease,
+        padding 0.5s ease;
+}
+
+.faqs .body .faq-item .symbol { transition: transform 0.5s; }
+.faqs .body .faq-item.active .symbol { transform: rotate(90deg); }
+
+.faqs .body .faq-item.active .faq-content {
+    max-height: 400px;
+    padding: 16px;
+}
+
+/* ================================================== */
+/* START */
+/* ================================================== */
+
+.start {
+    min-height: 100vh;
+    background-image: url('/assets/start-desktop.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.start .section { min-height: 100vh; }
+
+.start .body .link {
+    max-width: 568px;
+    transition:
+        transform 1760ms linear(0, 0.0146, 0.0548, 0.1153, 0.1911, 0.2776, 0.3706, 0.4665, 0.562, 0.6545, 0.7419, 0.8225, 0.8951, 0.9589, 1.0137, 1.0591, 1.0956, 1.1235, 1.1434, 1.156, 1.1621, 1.1626, 1.1585, 1.1505, 1.1396, 1.1264, 1.1118, 1.0964, 1.0807, 1.0653, 1.0505, 1.0367, 1.0241, 1.0128, 1.003, 0.9946, 0.9878, 0.9824, 0.9784, 0.9757, 0.9741, 0.9734, 0.9737, 0.9746, 0.9761, 0.9781, 0.9803, 0.9828, 0.9853, 0.9878, 0.9903, 0.9927, 0.9949, 0.9968, 0.9986, 1.0001, 1.0013, 1.0024, 1.0032, 1.0037, 1.0041, 1.0043, 1.0043, 1.0042, 1.0041, 1.0038, 1.0034, 1.0031, 1.0026, 1.0022, 1.0018, 1.0014, 1.001, 1.0007, 1.0004, 1.0001, 0.9999, 0.9997, 0.9996, 0.9994, 0.9994, 0.9993, 0.9993, 0.9993, 0.9993, 0.9994, 0.9994, 0.9995, 0.9995, 0.9996, 0.9997, 0.9997, 0.9998, 0.9999, 0.9999, 1, 1, 1, 1.0001, 1.0001, 1),
+        box-shadow 0.5s,
+        backdrop-filter 0.5s,
+        box-shadow 0.5s;
+}
+
+.start .body .link.glass {
+    backdrop-filter: blur(4px);
+    box-shadow: 2px 2px 8px 1px var(--color-border-light) inset;
+}
+
+.start .body .link:hover {
+    box-shadow: 2px 2px 12px 4px var(--color-border-light) inset;
+    transform: scale(1.1);
+}
+
+/* ================================================== */
+/* & RESPONSIVE BACKGROUND IMAGES */
+/* ================================================== */
+
+@media (max-width: 568px) {
+    .hero { background-image: url('/assets/hero-phone.webp'); }
+    .core { background-image: url('/assets/core-phone.webp'); }
+    .pricing { background-image: url('/assets/pricing-phone.webp'); }
+    .start { background-image: url('/assets/start-phone.webp'); }
 }
