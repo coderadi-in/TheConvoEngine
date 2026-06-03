@@ -93,7 +93,7 @@
 .core .benefits { grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); }
 
 .core .benefits .benefit {
-    backdrop-filter: blur(4px);
+    backdrop-filter: url(#glass);
     box-shadow: 2px 2px 8px 1px var(--color-border-light) inset;
 }
 
