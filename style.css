@@ -86,7 +86,7 @@
 .core .search-bar {
     max-width: 568px;
     width: 100%;
-    backdrop-filter: blur(4px);
+    backdrop-filter: url(#glass);
     box-shadow: 2px 2px 8px 1px var(--color-border-light) inset;
 }
 

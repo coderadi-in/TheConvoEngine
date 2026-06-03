@@ -82,6 +82,29 @@
                     <span class="symbol">search</span>
                 </div>
 
+                <svg style="position: absolute; width: 0; height: 0;">
+                    <filter id="glass"
+                        x="-50%" y="-50%"
+                        width="200%" height="200%"
+                        primitiveUnits="objectBoundingBox">
+
+                        <feTurbulence type="fractalNoise"
+                            baseFrequency="0.028"
+                            numOctaves="2"
+                            seed="4"
+                            result="map" />
+
+                        <feGaussianBlur in="SourceGraphic"
+                            stdDeviation="0.02" result="blur" />
+
+                        <feDisplacementMap id="disp"
+                            in="blur" in2="map" scale="0.8"
+                            xChannelSelector="R"
+                            yChannelSelector="G">
+                        </feDisplacementMap>
+                    </filter>
+                </svg>
+
                 <div class="benefits grid gap-24">
                     <div class="benefit p-20 rounded-16 column gap-12">
                         <div class="head row gap-12">
