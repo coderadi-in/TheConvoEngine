@@ -99,6 +99,34 @@
 }
 
 /* ================================================== */
+/* TRANSFORMATION */
+/* ================================================== */
+
+.transformation .body { max-width: 1024px; }
+
+.transformation .body .image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.transformation .body .image-wrapper .img { transition: transform 0.5s; }
+
+.transformation .image-wrapper .text-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    backdrop-filter: url(#glass);
+    box-shadow: 2px 2px 8px 1px var(--color-border-light) inset;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+.transformation .image-container:hover .text-content { opacity: 1; }
+.transformation .image-container:hover .img { transform: scale(1.02); }
+
+/* ================================================== */
 /* PRICING */
 /* ================================================== */
 
@@ -201,6 +229,10 @@
 /* ================================================== */
 /* & RESPONSIVE BACKGROUND IMAGES */
 /* ================================================== */
+
+@media (max-width: 768px) {
+    .transformation .grid { grid-template-columns: 1fr; }
+}
 
 @media (max-width: 568px) {
     .hero { background-image: url('/assets/hero-phone.webp'); }
